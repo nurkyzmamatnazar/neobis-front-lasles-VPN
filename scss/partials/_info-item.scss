@@ -1,0 +1,45 @@
+.info {
+  display: flex;
+  background-color: #fff;
+  padding: 40px 0;
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: 33.33%;
+    border-right: 2px solid #EEEFF2;
+    padding: 27px 20px;
+    &_servers {
+      border: none;
+    }
+    &::before {
+      content: "";
+      width: 55px;
+      height: 55px;
+      display: inline-block;
+    }
+    &_users::before{
+      @include info-item-sprite(-10px, -85px);
+    }
+    &_locations::before{
+      @include info-item-sprite(-85px,-10px);
+    }
+    &_servers::before{
+      @include info-item-sprite(-10px, -10px);
+    }
+  }
+  &__item-text {
+    padding-left: 30px;
+  }
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #0B132A;
+    margin: 0;
+  }
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #4F5665;
+    margin: 0;
+  }
+}
