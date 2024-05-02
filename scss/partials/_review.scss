@@ -1,0 +1,63 @@
+.review {
+  text-align: center;
+  &__cards {
+    display: flex;
+  }
+  &__card {
+    width: 33.33%;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin:10px;
+    &:hover{
+      border : 2px solid #F53838;
+    }
+  }
+  &__user {
+    display: flex;
+    justify-content: space-between;
+    &-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-pic {
+      height: auto;
+      width: 50px;
+    }
+    &-text {
+      text-align: left;
+      margin-left: 15px;
+    }
+    &-name {
+      font-size: 18px;
+      font-weight: 500;
+      color: #0B132A;
+      margin: 0;
+    }
+    &-country {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0;
+    }
+    &-rate {
+      font-size: 16px;
+      font-weight: 400;
+      color: #0B132A;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background: url(/images/star.png);
+      }
+    }
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #0B132A;
+  }
+}

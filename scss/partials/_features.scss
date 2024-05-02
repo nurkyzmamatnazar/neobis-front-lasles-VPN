@@ -1,35 +1,22 @@
 .features {
-  display: flex;
-  align-items: center;
   text-align: left;
+  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+  padding-top: 50px;
+  margin-bottom: 100px ;
+  &__inners {
+    display: flex;
+    align-items: center;
+  }
   &__inner {
     width: 50%;
   }
-  &__title {
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 50px;
-    color: #0B132A;
+  &__text {
+    align-self: flex-end;
+    margin-bottom: 0;
   }
-  &__subtitle {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #4F5665;
-  }
-  &__list {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    list-style: none;
-    text-align: left;
-    padding: 0 0;
-  }
-  &__item::before {
-    content: '';
+  &__list-item::before {
     width: 20px;
     height: 20px;
-    display: inline-block;
     background: url(/images/check-mark.png) no-repeat;
   }
 }

@@ -18,6 +18,17 @@ body {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-4 {
+  width: 33.3333%;
+  padding: 0 15px;
+}
+
 .logo {
   text-decoration: none;
   color: #0B132A;
@@ -153,27 +164,7 @@ body {
   margin: 0;
 }
 
-.features {
-  display: flex;
-  align-items: center;
-  text-align: left;
-}
-.features__inner {
-  width: 50%;
-}
-.features__title {
-  font-size: 35px;
-  font-weight: 500;
-  line-height: 50px;
-  color: #0B132A;
-}
-.features__subtitle {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #4F5665;
-}
-.features__list {
+.list {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -181,12 +172,209 @@ body {
   text-align: left;
   padding: 0 0;
 }
-.features__item::before {
+.list__item::before {
   content: "";
+  display: inline-block;
+  margin: 0 5px;
+  align-self: center;
+}
+
+.features {
+  text-align: left;
+  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+.features__inners {
+  display: flex;
+  align-items: center;
+}
+.features__inner {
+  width: 50%;
+}
+.features__text {
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+.features__list-item::before {
   width: 20px;
   height: 20px;
-  display: inline-block;
   background: url(/images/check-mark.png) no-repeat;
+}
+
+.plan {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  padding: 40px 70px;
+}
+.card__img {
+  display: block;
+  width: 100%;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.card__content::before {
+  content: "";
+  display: inline-block;
+  width: 145px;
+  height: 165px;
+  background: url(/images/box.png);
+  align-self: center;
+}
+.card__content-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: #0B132A;
+}
+.card__list-item::before {
+  width: 13px;
+  height: 9px;
+  background: url(/images/check-mark-noback.png) no-repeat;
+  padding-left: 22px;
+}
+.card__price {
+  margin-top: auto;
+  align-self: center;
+}
+.card__price-title {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  color: #0B132A;
+  margin: 0;
+  padding: 15px 0;
+}
+.card__price-title_grey {
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #4F5665;
+}
+.card_red {
+  border: 2px solid #F53838;
+}
+
+.text__title {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #0B132A;
+  margin: 0;
+}
+.text__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4F5665;
+}
+
+.btn-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #F53838;
+  background-color: #fff;
+  border: 2px solid #F53838;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 45px;
+}
+.btn-link_red {
+  color: #fff;
+  background: #F53838;
+}
+
+.global-network {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.global-network__map {
+  margin-bottom: 30px;
+}
+.global-network__soc-net {
+  width: 20%;
+  height: auto;
+  padding: 0 20px;
+  align-self: center;
+}
+
+.review {
+  text-align: center;
+}
+.review__cards {
+  display: flex;
+}
+.review__card {
+  width: 33.33%;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 10px;
+}
+.review__card:hover {
+  border: 2px solid #F53838;
+}
+.review__user {
+  display: flex;
+  justify-content: space-between;
+}
+.review__user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.review__user-pic {
+  height: auto;
+  width: 50px;
+}
+.review__user-text {
+  text-align: left;
+  margin-left: 15px;
+}
+.review__user-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0B132A;
+  margin: 0;
+}
+.review__user-country {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+.review__user-rate {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0B132A;
+}
+.review__user-rate::after {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url(/images/star.png);
+}
+.review__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #0B132A;
 }
 
 /*# sourceMappingURL=style.css.map */

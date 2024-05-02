@@ -1,0 +1,17 @@
+.btn-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #F53838;
+  background-color: #fff;
+  border: 2px solid #F53838;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 45px;
+  &_red {
+    color: #fff;
+    background: #F53838;
+  }
+}

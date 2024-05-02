@@ -1,0 +1,13 @@
+.global-network {
+  text-align: center;
+  margin-bottom: 40px;
+  &__map {
+    margin-bottom: 30px;
+  }
+  &__soc-net {
+    width: 20%;
+    height: auto;
+    padding: 0 20px;
+    align-self: center;
+  }
+}
