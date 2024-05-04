@@ -1,0 +1,74 @@
+%sprite-footer{
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+}
+.footer {
+  background-color: #F8F8F8;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+  &__links {
+    width: 35%;
+    &_weight {
+      font-weight: 500;
+    }
+  }
+  &__soc-net {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #F53838;
+    border-radius: 50%;
+    &::before {
+      @extend %sprite-footer;
+    }
+    &_fb::before {
+      @include socnet-sprite (-10px, -64px);
+    }
+    &_tw::before {
+      @include socnet-sprite (-64px, -10px);
+    }
+    &_inst::before {
+      @include socnet-sprite (-10px, -10px);
+    }
+  }
+  &__date {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #AFB5C0;
+    &_weight {
+      font-weight: 500;
+    }
+  }
+  &__list {
+    display: flex;
+    align-self: flex-end;
+    &-title {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      color: #0B132A;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+    &-link {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: left;
+      color: #4F5665;
+      margin: 5px 0;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+  }
+}

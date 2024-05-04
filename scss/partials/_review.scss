@@ -2,13 +2,15 @@
   text-align: center;
   &__cards {
     display: flex;
+    margin-bottom: 30px;
+    margin-right: -180px;
   }
   &__card {
-    width: 33.33%;
+    width: 38.33%;
     border: 2px solid #DDDDDD;
     border-radius: 10px;
     padding: 20px 30px;
-    margin:10px;
+    margin:10px 20px;
     &:hover{
       border : 2px solid #F53838;
     }
@@ -49,7 +51,7 @@
         display: inline-block;
         width: 13px;
         height: 13px;
-        background: url(/images/star.png);
+        background: url(../images/star.png);
       }
     }
   }
@@ -59,5 +61,36 @@
     line-height: 30px;
     text-align: left;
     color: #0B132A;
+  }
+  &__indicators {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__indicator {
+    width: 15px;
+    height: 15px;
+    background-color: #DDE0E4;
+    border-radius: 50%;
+    margin: 10px 5px;
+    &_red {
+      width: 45px;
+      height: 15px;
+      background-color: #F53838;
+      border-radius: 20px;
+    }
+  }
+  &__arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    &_prev {
+      border: 2px solid #F53838;
+      background: url(../images/arrow-prev.png) 50% no-repeat;
+    }
+    &_next {
+      border: none;
+      background: url(../images/arrow-next.png) 50% no-repeat #F53838;
+    }
   }
 }

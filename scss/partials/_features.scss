@@ -1,6 +1,5 @@
 .features {
   text-align: left;
-  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
   padding-top: 50px;
   margin-bottom: 100px ;
   &__inners {
@@ -17,6 +16,6 @@
   &__list-item::before {
     width: 20px;
     height: 20px;
-    background: url(/images/check-mark.png) no-repeat;
+    background: url(../images/check-mark.png) no-repeat;
   }
 }
