@@ -71,6 +71,9 @@
       text-align: left;
       color: #4F5665;
       margin: 5px 0;
+      &:hover {
+        color: #252931;
+      }
     }
   }
   &__item {

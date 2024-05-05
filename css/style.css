@@ -43,24 +43,6 @@ body {
   color: #4F5665;
 }
 
-.btn-link {
-  display: inline-block;
-  text-decoration: none;
-  padding: 5px 10px;
-  color: #F53838;
-  background-color: #fff;
-  border: 2px solid #F53838;
-  border-radius: 50px;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  padding: 8px 45px;
-}
-.btn-link_red {
-  color: #fff;
-  background: #F53838;
-}
-
 .list {
   font-size: 14px;
   font-weight: 400;
@@ -138,8 +120,26 @@ body {
   text-align: center;
   color: #4F5665;
 }
-.card_red {
+.card:hover {
   border: 2px solid #F53838;
+}
+.card__btn-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #F53838;
+  background-color: #fff;
+  border: 2px solid #F53838;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 45px;
+}
+.card__btn-link:hover {
+  color: #fff;
+  background: #F53838;
+  transition: 1s;
 }
 
 .header {
@@ -182,6 +182,11 @@ body {
   border: 1px solid #F53855;
   border-radius: 50px;
   padding: 13px 45px;
+}
+.header__userbar-link_red:hover {
+  color: #fff;
+  background: #F53855;
+  transition: 1s;
 }
 
 .button {
@@ -308,6 +313,23 @@ body {
 .plan__text {
   margin-bottom: 60px;
 }
+.plan__btn-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #F53838;
+  background-color: #fff;
+  border: 2px solid #F53838;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 45px;
+}
+.plan__btn-link:hover {
+  color: #fff;
+  background: #F53838;
+}
 
 .global-network {
   text-align: center;
@@ -416,6 +438,7 @@ body {
   height: 15px;
   background-color: #F53838;
   border-radius: 20px;
+  transition: 300ms;
 }
 .review__arrow {
   width: 60px;
@@ -428,8 +451,12 @@ body {
   background: url(../images/arrow-prev.png) 50% no-repeat;
 }
 .review__arrow_next {
-  border: none;
+  border: 2px solid #F53838;
   background: url(../images/arrow-next.png) 50% no-repeat #F53838;
+}
+.review__arrow:hover {
+  box-shadow: 1px 10px 10px #db5050;
+  transition: 1s;
 }
 
 .offer__inner {
@@ -519,6 +546,9 @@ body {
   text-align: left;
   color: #4F5665;
   margin: 5px 0;
+}
+.footer__list-link:hover {
+  color: #252931;
 }
 .footer__item {
   display: flex;

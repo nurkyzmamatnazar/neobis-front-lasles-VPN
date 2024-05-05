@@ -37,6 +37,11 @@
         border: 1px solid #F53855;
         border-radius: 50px;
         padding: 13px 45px;
+        &:hover {
+        color: #fff;
+        background: #F53855;
+        transition: 1s;
+      }
       }
     }
 

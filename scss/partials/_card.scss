@@ -56,7 +56,25 @@
       }
     }
   }
-  &_red {
+  &:hover {
     border: 2px solid #F53838;
+  }
+  &__btn-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #F53838;
+    background-color: #fff;
+    border: 2px solid #F53838;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px 45px;
+    &:hover {
+      color: #fff;
+      background: #F53838;
+      transition: 1s;
+    }
   }
 }
