@@ -14,8 +14,9 @@
     margin-bottom: 0;
   }
   &__list-item::before {
-    width: 20px;
-    height: 20px;
-    background: url(../images/check-mark.png) no-repeat;
-  }
+      width: 20px;
+      height: 20px;
+      background: url(../images/check-mark.png) no-repeat;
+      padding-left: 30px;
+    }
 }

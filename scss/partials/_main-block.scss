@@ -2,6 +2,7 @@
   text-align: left;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
   &__inner {
     width: 50%;
   }
@@ -10,6 +11,8 @@
     font-weight: 500;
     line-height: 70px;
     color: #0B132A;
+    align-self: center;
+    margin-bottom: 20px;
     &_weight {
       font-weight: 700;
     }
@@ -19,12 +22,10 @@
     font-weight: 400;
     line-height: 30px;
     color: #4F5665;
+    margin-top: 0;
+    margin-bottom: 40px;
     &_weight {
       font-weight: 500;
     }
-  }
-  &__pic {
-    height: auto;
-    width: 611px;
   }
 }

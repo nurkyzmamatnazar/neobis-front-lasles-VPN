@@ -1,16 +1,22 @@
 .review {
   text-align: center;
-  &__cards {
-    display: flex;
-    margin-bottom: 30px;
-    margin-right: -180px;
+  margin-bottom: -90px;
+  &__title {
+    margin-bottom: 50px;
   }
-  &__card {
+  &__items {
+    display: flex;
+    margin-bottom: 60px;
+  }
+  &__item {
     width: 38.33%;
     border: 2px solid #DDDDDD;
     border-radius: 10px;
     padding: 20px 30px;
     margin:10px 20px;
+    &_ind {
+      margin-left: 0;
+    }
     &:hover{
       border : 2px solid #F53838;
     }
@@ -62,9 +68,12 @@
     text-align: left;
     color: #0B132A;
   }
-  &__indicators {
+  &__control {
     display: flex;
     justify-content: space-between;
+  }
+  &__indicators {
+    display: flex;
   }
   &__indicator {
     width: 15px;

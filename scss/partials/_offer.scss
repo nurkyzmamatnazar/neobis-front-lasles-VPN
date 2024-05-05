@@ -1,15 +1,15 @@
 .offer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #fff;
-  border: 1px solid red;
-  border-radius: 10px;
-  padding: 40px 50px;
+  &__inner {
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 50px;
+  }
   &__text {
     width: 50%;
-  }
-  &__button {
-    box-shadow: #F5383859 0px 15px 20px -6px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   }
 }

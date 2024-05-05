@@ -6,6 +6,8 @@
 }
 .footer {
   background-color: #F8F8F8;
+  padding-top: 120px;
+  padding-bottom: 70px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -17,11 +19,16 @@
       font-weight: 500;
     }
   }
+  &__subtitle {
+    margin: 20px 0;
+  }
   &__soc-net {
     text-decoration: none;
     display: inline-block;
     background-color: #F53838;
     border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
     &::before {
       @extend %sprite-footer;
     }

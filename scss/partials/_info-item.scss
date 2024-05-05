@@ -2,6 +2,8 @@
   display: flex;
   background-color: #fff;
   padding: 40px 0;
+  max-width: 1140px;
+  margin: 0 auto;
   &__item {
     display: flex;
     justify-content: center;

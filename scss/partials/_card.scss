@@ -18,7 +18,7 @@
       display: inline-block;
       width: 145px;
       height: 165px;
-      background: url(/images/box.png);
+      background: url(../images/box.png);
       align-self: center;
     }
     &-title {
@@ -29,11 +29,14 @@
       color: #0B132A;
     }
   }
-  &__list-item::before {
+  &__list-item {
+    margin-bottom: 25px;
+    &::before {
     width: 13px;
     height: 9px;
     background: url(../images/check-mark-noback.png) no-repeat;
     padding-left: 22px;
+  }
   }
   &__price {
     margin-top: auto;

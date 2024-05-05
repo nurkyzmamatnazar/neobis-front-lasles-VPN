@@ -5,10 +5,13 @@
     list-style: none;
     text-align: left;
     padding: 0 0;
-    &__item::before {
-    content: '';
-    display: inline-block;
-    margin: 0 5px;
-    align-self: center;
+    &__item {
+      margin-bottom: 15px;
+      &::before {
+      content: '';
+      display: inline-block;
+      margin: 0 5px;
+      align-self: center;
+    }
   }
   }

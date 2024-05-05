@@ -14,25 +14,26 @@
 <body>
 
   <header class="header">
-    <div class="container header__inner">
-      <a class="logo" href="#">
-        <img src="images/logo.png" alt="vector">
-        Lasles<span class="logo_font-weight">VPN</span>
-      </a>
-    
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Features</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Testimonials</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Help</a></li>
-        </ul>
-      </nav>
-
-      <div class="header__userbar">
-        <a class="header__userbar-link header__userbar-link_blue" href="#">Sign In</a>
-        <a class="header__userbar-link header__userbar-link_red" href="#">Sign Up</a>
+    <div class="container">
+      <div class="header__inner">
+        <a href="#">
+          <img src="images/logo.png" alt="vector">
+        </a>
+      
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="#">About</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Features</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Pricing</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Testimonials</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Help</a></li>
+          </ul>
+        </nav>
+  
+        <div class="header__userbar">
+          <a class="header__userbar-link header__userbar-link_blue" href="#">Sign In</a>
+          <a class="header__userbar-link header__userbar-link_red" href="#">Sign Up</a>
+        </div>
       </div>
     </div>
   </header>
@@ -48,11 +49,12 @@
     <button class="button">Get Started</button>
     </div>
     <div class="main-block__inner">
-      <img class="main-block__pic" src="images/main-pic.png" alt="main-pic">
+      <img src="images/main-pic.png" alt="main-pic">
     </div>
     </div>
+  </div>
 
-    <div class="info">
+  <div class="info">
       <div class="info__item info__item_users">
         <div class="info__item-text">
           <h5 class="info__title">90+</h5>
@@ -72,7 +74,6 @@
         </div>
       </div>
     </div>
-  </div>
 
   <div class="features">
     <div class="container features__inners">
@@ -94,7 +95,7 @@
 
   <div class="plan">
     <div class="container">
-      <div class="text plan_text">
+      <div class="text plan__text">
         <h4 class="text__title">Choose Your Plan</h4>
         <p class="text__subtitle">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
       </div>
@@ -180,13 +181,13 @@
 
   <div class="review">
     <div class="container">
-      <div class="text">
+      <div class="text review__title">
         <h4 class="text__title">Trusted by Thousands of Happy Customer</h4>
         <p class="text__subtitle">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
       </div>
 
-      <div class="review__cards">
-        <div class="review__card review__card_red">
+      <div class="review__items">
+        <div class="review__item review__item_ind">
           <div class="review__user">
             <div class="review__user-info">
               <img class="review__user-pic" src="images/user1.png" alt="user">
@@ -200,7 +201,7 @@
           <div class="review__text">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</div>
         </div>
 
-        <div class="review__card">
+        <div class="review__item">
           <div class="review__user">
             <div class="review__user-info">
               <img class="review__user-pic" src="images/user2.png" alt="user">
@@ -214,7 +215,7 @@
           <div class="review__text">“I like it because I like to travel far and still can connect with high speed.”.</div>
         </div>
 
-        <div class="review__card">
+        <div class="review__item">
           <div class="review__user">
             <div class="review__user-info">
               <img class="review__user-pic" src="images/user3.png" alt="user">
@@ -229,8 +230,8 @@
         </div>
       </div>
       
-      <div class="review__indicators">
-        <div class="row">
+      <div class="review__control">
+        <div class="review__indicators">
           <span class="review__indicator review__indicator_red"></span>
           <span class="review__indicator"></span>
           <span class="review__indicator"></span>
@@ -245,14 +246,14 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="offer">
-      <div class="text offer__text">
-        <div class="text__title">Subscribe Now for Get Special Features!</div>
-        <div class="text__subtitle">Let's subscribe with us and find the fun.</div>
-      </div>
+  <div class="offer">
+    <div class="container">
       <div class="offer__inner">
-        <button class="button offer__button">Subscribe Now</button>
+        <div class="text offer__text">
+          <div class="text__title">Subscribe Now for Get Special Features!</div>
+          <div class="text__subtitle">Let's subscribe with us and find the fun.</div>
+        </div>
+        <button class="button">Subscribe Now</button>
       </div>
     </div>
   </div>
@@ -261,11 +262,10 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__links">
-          <a class="logo" href="#">
+          <a href="#">
             <img src="images/logo.png" alt="vector">
-            Lasles<span class="logo_font-weight">VPN</span>
           </a>
-          <div class="text__subtitle"><span class="footer__links_weight">LaslesVPN</span> is a private virtual network that has unique features and has high security.</div>
+          <div class="text__subtitle footer__subtitle"><span class="footer__links_weight">LaslesVPN</span> is a private virtual network that has unique features and has high security.</div>
           <div class="footer__soc-nets">
             <a href="#" class="footer__soc-net footer__soc-net_fb"></a>
             <a href="#" class="footer__soc-net footer__soc-net_tw"></a>
