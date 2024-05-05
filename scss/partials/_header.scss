@@ -22,6 +22,10 @@
     text-decoration: none;
     color: #4F5665;
     margin-right: 18px;
+    &:hover {
+      color: #2f353d;
+      font-weight: 500;
+    }
   }
 }
   &__userbar {
