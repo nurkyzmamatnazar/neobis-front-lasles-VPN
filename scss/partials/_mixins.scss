@@ -1,7 +1,0 @@
-@mixin info-item-sprite($x, $y){
-  background: url(../images/info-item-sprite.png) $x $y no-repeat;
-}
-
-@mixin socnet-sprite($x, $y) {
-  background: url(../images/socnet-sprite.png) $x $y no-repeat;
-}

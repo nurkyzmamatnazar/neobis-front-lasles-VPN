@@ -254,21 +254,6 @@ body {
 .info__item_servers {
   border: none;
 }
-.info__item::before {
-  content: "";
-  width: 55px;
-  height: 55px;
-  display: inline-block;
-}
-.info__item_users::before {
-  background: url(../images/info-item-sprite.png) -10px -85px no-repeat;
-}
-.info__item_locations::before {
-  background: url(../images/info-item-sprite.png) -85px -10px no-repeat;
-}
-.info__item_servers::before {
-  background: url(../images/info-item-sprite.png) -10px -10px no-repeat;
-}
 .info__item-text {
   padding-left: 30px;
 }
@@ -477,13 +462,6 @@ body {
   width: 50%;
 }
 
-.footer__soc-net::before {
-  content: "";
-  display: inline-block;
-  width: 34px;
-  height: 34px;
-}
-
 .footer {
   background-color: #F8F8F8;
   padding-top: 120px;
@@ -506,19 +484,12 @@ body {
 .footer__soc-net {
   text-decoration: none;
   display: inline-block;
-  background-color: #F53838;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
-  margin-top: 10px;
+  background: #F53838;
+  margin-right: 8px;
   margin-bottom: 20px;
-}
-.footer__soc-net_fb::before {
-  background: url(../images/socnet-sprite.png) -10px -64px no-repeat;
-}
-.footer__soc-net_tw::before {
-  background: url(../images/socnet-sprite.png) -64px -10px no-repeat;
-}
-.footer__soc-net_inst::before {
-  background: url(../images/socnet-sprite.png) -10px -10px no-repeat;
 }
 .footer__date {
   font-size: 16px;

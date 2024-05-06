@@ -1,9 +1,3 @@
-%sprite-footer{
-  content: "";
-  display: inline-block;
-  width: 34px;
-  height: 34px;
-}
 .footer {
   background-color: #F8F8F8;
   padding-top: 120px;
@@ -25,22 +19,12 @@
   &__soc-net {
     text-decoration: none;
     display: inline-block;
-    background-color: #F53838;
+    width: 33px;
+    height: 33px;
     border-radius: 50%;
-    margin-top: 10px;
+    background: #F53838;
+    margin-right: 8px;
     margin-bottom: 20px;
-    &::before {
-      @extend %sprite-footer;
-    }
-    &_fb::before {
-      @include socnet-sprite (-10px, -64px);
-    }
-    &_tw::before {
-      @include socnet-sprite (-64px, -10px);
-    }
-    &_inst::before {
-      @include socnet-sprite (-10px, -10px);
-    }
   }
   &__date {
     font-size: 16px;
