@@ -9,6 +9,10 @@
   &__inner {
     width: 50%;
   }
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
   &__text {
     align-self: flex-end;
     margin-bottom: 0;
